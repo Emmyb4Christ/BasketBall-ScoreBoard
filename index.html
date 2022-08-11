@@ -12,24 +12,31 @@
       <div>
         <h1>HOME</h1>
         <div class="col-1">
-          <div class="score">0</div>
+          <div class="score" id="home-player-score">0</div>
           <div class="button-div">
-            <button>+1</button>
-            <button>+2</button>
-            <button>+3</button>
+            <button id="add-one" onclick="incrementHomeByOne()">+1</button>
+            <button id="add-two" onclick="incrementHomeByTwo()">+2</button>
+            <button id="add-three" onclick="incrementHomeByThree()">+3</button>
           </div>
         </div>
       </div>
       <div>
         <h1>GUEST</h1>
         <div class="col-2">
-          <div class="score">0</div>
+          <div class="score" id="guest-player-score">0</div>
           <div class="button-div">
-            <button>+1</button>
-            <button>+2</button>
-            <button>+3</button>
+            <button id="add-one" onclick="incrementGuestByOne()">+1</button>
+            <button id="add-two" onclick="incrementGuestByTwo()">+2</button>
+            <button id="add-three" onclick="incrementGuestByThree()">+3</button>
           </div>
         </div>
+      </div>
+      <div id="result-div">
+        <p id="result-el"></p>
+        <button id="save-el" onclick="result()">RESULT</button>
+        <button id="new-game">NEW GAME</button>
+
+        <p id="alert-el"></p>
       </div>
     </div>
 
